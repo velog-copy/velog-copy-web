@@ -11,40 +11,6 @@ import { ReactComponent as Kebab } from './kebab.svg';
 import { ReactComponent as Like } from './like.svg';
 import './App.css';
 
-const dummyData = [
-  {
-    posting_id: 1,
-    posting_url: "/posting?posting_id=1",
-    posting_title: "4시간 만에 Node.js PR 승인받기",
-    posting_header_image_url: "/resources/image/1",
-    posting_preview: "ai와 함께 하는 페어프로그래밍",
-    posting_datetime: "2025-08-14T21:37:34",
-    comment_count: 0,
-    like_count: 0
-  },
-  {
-    posting_id: 2,
-    posting_url: "/posting?posting_id=2",
-    posting_title: "(번역) 자바스크립트 스코프 호이스팅은 망가졌습니다",
-    posting_header_image_url: "/resources/image/2",
-    posting_preview: "자바스크립트 번들러의 최적화 기법인 스코프 호이스팅(scope hoisting)의 동작 원리와 그 한계를 자세히 설명하고 있습니다.",
-    posting_datetime: "2025-08-14T21:40:45",
-    comment_count: 0,
-    like_count: 0
-  },
-  {
-    posting_id: 3,
-    posting_url: "/posting?posting_id=3",
-    posting_title: "이거 다 알면 VSC 단축키 마스터 (with. mac)",
-    posting_header_image_url: "/resources/image/3",
-    posting_preview: "웬만한 단축키 다 정리했습니다. (스압 주의)",
-    posting_datetime: "2025-08-14T21:41:23",
-    comment_count: 0,
-    like_count: 0
-  }
-];
-
-
 function App() {
   const [posts, setPosts] = useState([]);
 
