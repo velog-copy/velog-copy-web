@@ -1,172 +1,172 @@
 /*Velog CSS*/
 :root {
-    --element-height-md: 40px;
-    --element-height-sm: 36px;
-    --border-radius-md: 6px;
-    --teal0: #f3fffb;
-    --teal1: #c3fae8;
-    --teal2: #96f2d7;
-    --teal3: #63e6be;
-    --teal4: #38d9a9;
-    --teal5: #20c997;
-    --teal6: #12b886;
-    --eal7: #0ca678;
-    --teal8: #099268;
-    --teal9: #087f5b;
-    --gray0: #f8f9fa;
-    --gray1: #f1f3f5;
-    --gray2: #e9ecef;
-    --gray3: #dee2e6;
-    --gray4: #ced4da;
-    --gray5: #adb5bd;
-    --gray6: #868e96;
-    --gray7: #495057;
-    --gray8: #343a40;
-    --gray9: #212529;
-    --red0: #fff5f5;
-    --red1: #ffe3e3;
-    --red2: #ffc9c9;
-    --red3: #ffa8a8;
-    --red4: #ff8787;
-    --red5: #ff6b6b;
-    --red6: #fa5252;
-    --red7: #f03e3e;
-    --red8: #e03131;
-    --red9: #c92a2a
+  --element-height-md: 40px;
+  --element-height-sm: 36px;
+  --border-radius-md: 6px;
+  --teal0: #f3fffb;
+  --teal1: #c3fae8;
+  --teal2: #96f2d7;
+  --teal3: #63e6be;
+  --teal4: #38d9a9;
+  --teal5: #20c997;
+  --teal6: #12b886;
+  --eal7: #0ca678;
+  --teal8: #099268;
+  --teal9: #087f5b;
+  --gray0: #f8f9fa;
+  --gray1: #f1f3f5;
+  --gray2: #e9ecef;
+  --gray3: #dee2e6;
+  --gray4: #ced4da;
+  --gray5: #adb5bd;
+  --gray6: #868e96;
+  --gray7: #495057;
+  --gray8: #343a40;
+  --gray9: #212529;
+  --red0: #fff5f5;
+  --red1: #ffe3e3;
+  --red2: #ffc9c9;
+  --red3: #ffa8a8;
+  --red4: #ff8787;
+  --red5: #ff6b6b;
+  --red6: #fa5252;
+  --red7: #f03e3e;
+  --red8: #e03131;
+  --red9: #c92a2a
 }
 
 [data-theme=dark] {
-    --background-base: #212121;
-    --background1: #323232;
-    --background2: #3c3c3c;
-    --background3: #494949;
-    --background4: #565656;
-    --background-invert: #f0f0f0;
-    --background-altbase: #212121;
-    --accent1: #f0f0f0;
-    --accent2: #c2c2c2;
-    --accent3: #999;
-    --accent4: #707070;
-    --accent-invert: #121212;
-    --border1: #c9c9c9;
-    --border2: grey;
-    --border3: #3d3d3d;
-    --primary: #80deea;
-    --emphasize: #ffb74d;
-    --destructive: #ef9a9a;
-    --overlay: hsla(0,0%,100%,.08);
-    --bg-page1: #121212;
-    --bg-page2: #121212;
-    --bg-element1: #1e1e1e;
-    --bg-element2: #1e1e1e;
-    --bg-element3: #252525;
-    --bg-element4: #2e2e2e;
-    --bg-element5: #f1f3f5;
-    --bg-element6: #f8f9fa;
-    --bg-element7: #1b1b1b;
-    --bg-element8: #0c0c0c;
-    --bg-invert: #fff;
-    --bg-inline-code: #363636;
-    --bg-tag: #252525;
-    --text1: #ececec;
-    --text2: #d9d9d9;
-    --text3: #acacac;
-    --text4: #595959;
-    --border1: #e0e0e0;
-    --border2: #a0a0a0;
-    --border3: #4d4d4d;
-    --border4: #2a2a2a;
-    --primary1: #96f2d7;
-    --primary2: #63e6be;
-    --destructive1: #ffc9c9;
-    --destructive2: #ffa8a8;
-    --button-text: #121212;
-    --slight-layer: hsla(0,0%,100%,.1);
-    --opaque-layer: rgba(0,0,0,.85);
-    --editor-footer: #2e2e2e;
-    --prism-bg: #1e1e1e;
-    --prism-default-text: #e0e6f1;
-    --prism-selection-bg: #383e49;
-    --prism-code-block-bg: #1e1e1e;
-    --prism-code-1: #7c858d;
-    --prism-code-2: #abb2bf;
-    --prism-code-3: #e06c75;
-    --prism-code-4: #d19a66;
-    --prism-code-5: #98c379;
-    --prism-code-6: #56b6c2;
-    --prism-code-7: #c678dd;
-    --prism-code-8: #61afef;
-    --prism-code-9: #c678dd;
-    --prism-line-number: #5c6370
+  --background-base: #212121;
+  --background1: #323232;
+  --background2: #3c3c3c;
+  --background3: #494949;
+  --background4: #565656;
+  --background-invert: #f0f0f0;
+  --background-altbase: #212121;
+  --accent1: #f0f0f0;
+  --accent2: #c2c2c2;
+  --accent3: #999;
+  --accent4: #707070;
+  --accent-invert: #121212;
+  --border1: #c9c9c9;
+  --border2: grey;
+  --border3: #3d3d3d;
+  --primary: #80deea;
+  --emphasize: #ffb74d;
+  --destructive: #ef9a9a;
+  --overlay: hsla(0,0%,100%,.08);
+  --bg-page1: #121212;
+  --bg-page2: #121212;
+  --bg-element1: #1e1e1e;
+  --bg-element2: #1e1e1e;
+  --bg-element3: #252525;
+  --bg-element4: #2e2e2e;
+  --bg-element5: #f1f3f5;
+  --bg-element6: #f8f9fa;
+  --bg-element7: #1b1b1b;
+  --bg-element8: #0c0c0c;
+  --bg-invert: #fff;
+  --bg-inline-code: #363636;
+  --bg-tag: #252525;
+  --text1: #ececec;
+  --text2: #d9d9d9;
+  --text3: #acacac;
+  --text4: #595959;
+  --border1: #e0e0e0;
+  --border2: #a0a0a0;
+  --border3: #4d4d4d;
+  --border4: #2a2a2a;
+  --primary1: #96f2d7;
+  --primary2: #63e6be;
+  --destructive1: #ffc9c9;
+  --destructive2: #ffa8a8;
+  --button-text: #121212;
+  --slight-layer: hsla(0,0%,100%,.1);
+  --opaque-layer: rgba(0,0,0,.85);
+  --editor-footer: #2e2e2e;
+  --prism-bg: #1e1e1e;
+  --prism-default-text: #e0e6f1;
+  --prism-selection-bg: #383e49;
+  --prism-code-block-bg: #1e1e1e;
+  --prism-code-1: #7c858d;
+  --prism-code-2: #abb2bf;
+  --prism-code-3: #e06c75;
+  --prism-code-4: #d19a66;
+  --prism-code-5: #98c379;
+  --prism-code-6: #56b6c2;
+  --prism-code-7: #c678dd;
+  --prism-code-8: #61afef;
+  --prism-code-9: #c678dd;
+  --prism-line-number: #5c6370
 }
 
 [data-theme=light] {
-    --background-base: #fff;
-    --background1: #fff;
-    --background2: #f5f5f5;
-    --background3: #ebebeb;
-    --background4: #e0e0e0;
-    --background-invert: #212121;
-    --background-altbase: #f5f5f5;
-    --accent1: #121212;
-    --accent2: #4a4a4a;
-    --accent3: #898989;
-    --accent4: silver;
-    --accent-invert: #fff;
-    --border1: grey;
-    --border2: silver;
-    --border3: #f1f1f1;
-    --primary: #00bcd4;
-    --emphasize: #ff9800;
-    --destructive: #f44336;
-    --overlay: rgba(33,33,33,.08);
-    --bg-page1: #f8f9fa;
-    --bg-page2: #fff;
-    --bg-element1: #fff;
-    --bg-element2: #f8f9fa;
-    --bg-element3: #e9ecef;
-    --bg-element4: #dee2e6;
-    --bg-element5: #212529;
-    --bg-element6: #343a40;
-    --bg-element7: #fafafa;
-    --bg-element8: #fbfdfc;
-    --bg-invert: #1e1e1e;
-    --bg-inline-code: #e9ecef;
-    --bg-tag: #f8f9fa;
-    --text1: #212529;
-    --text2: #495057;
-    --text3: #868e96;
-    --text4: #ced4da;
-    --border1: #343a40;
-    --border2: #adb5bd;
-    --border3: #dee2e6;
-    --border4: #f1f3f5;
-    --primary1: #12b886;
-    --primary2: #20c997;
-    --destructive1: #ff6b6b;
-    --destructive2: #ff8787;
-    --button-text: #fff;
-    --slight-layer: rgba(0,0,0,.05);
-    --opaque-layer: hsla(0,0%,98%,.85);
-    --editor-footer: #fff;
-    --prism-bg: #fbfcfd;
-    --prism-default-text: #24292e;
-    --prism-selection-bg: rgba(0,0,0,.15);
-    --prism-code-block-bg: #fbfcfd;
-    --prism-code-1: #969896;
-    --prism-code-2: #24292e;
-    --prism-code-3: #a626a4;
-    --prism-code-4: #63a35c;
-    --prism-code-5: #0184bc;
-    --prism-code-6: #50a14f;
-    --prism-code-7: #a626a4;
-    --prism-code-8: #005cc5;
-    --prism-code-9: #a626a4;
-    --prism-line-number: #585c63
+  --background-base: #fff;
+  --background1: #fff;
+  --background2: #f5f5f5;
+  --background3: #ebebeb;
+  --background4: #e0e0e0;
+  --background-invert: #212121;
+  --background-altbase: #f5f5f5;
+  --accent1: #121212;
+  --accent2: #4a4a4a;
+  --accent3: #898989;
+  --accent4: silver;
+  --accent-invert: #fff;
+  --border1: grey;
+  --border2: silver;
+  --border3: #f1f1f1;
+  --primary: #00bcd4;
+  --emphasize: #ff9800;
+  --destructive: #f44336;
+  --overlay: rgba(33,33,33,.08);
+  --bg-page1: #f8f9fa;
+  --bg-page2: #fff;
+  --bg-element1: #fff;
+  --bg-element2: #f8f9fa;
+  --bg-element3: #e9ecef;
+  --bg-element4: #dee2e6;
+  --bg-element5: #212529;
+  --bg-element6: #343a40;
+  --bg-element7: #fafafa;
+  --bg-element8: #fbfdfc;
+  --bg-invert: #1e1e1e;
+  --bg-inline-code: #e9ecef;
+  --bg-tag: #f8f9fa;
+  --text1: #212529;
+  --text2: #495057;
+  --text3: #868e96;
+  --text4: #ced4da;
+  --border1: #343a40;
+  --border2: #adb5bd;
+  --border3: #dee2e6;
+  --border4: #f1f3f5;
+  --primary1: #12b886;
+  --primary2: #20c997;
+  --destructive1: #ff6b6b;
+  --destructive2: #ff8787;
+  --button-text: #fff;
+  --slight-layer: rgba(0,0,0,.05);
+  --opaque-layer: hsla(0,0%,98%,.85);
+  --editor-footer: #fff;
+  --prism-bg: #fbfcfd;
+  --prism-default-text: #24292e;
+  --prism-selection-bg: rgba(0,0,0,.15);
+  --prism-code-block-bg: #fbfcfd;
+  --prism-code-1: #969896;
+  --prism-code-2: #24292e;
+  --prism-code-3: #a626a4;
+  --prism-code-4: #63a35c;
+  --prism-code-5: #0184bc;
+  --prism-code-6: #50a14f;
+  --prism-code-7: #a626a4;
+  --prism-code-8: #005cc5;
+  --prism-code-9: #a626a4;
+  --prism-line-number: #585c63
 }
 
 * {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
@@ -177,137 +177,137 @@ body {
 }
 
 button, input, textarea {
-    font-family: inherit;
+  font-family: inherit;
 }
 
 .RoundButton {
-    transition: all .125s ease-in;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    font-weight: 700;
-    word-break: keep-all;
-    user-select: none;
-    &:focus {
-        box-shadow: 0 2px 12px #00000030
+  transition: all .125s ease-in;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  word-break: keep-all;
+  user-select: none;
+  &:focus {
+    box-shadow: 0 2px 12px #00000030
+  }
+
+  &:disabled {
+    background: var(--bg-element2)
+  }
+
+  &.RoundButton_small {
+    height: 1.5rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    font-size: .875rem;
+    border-radius: .75rem
+  }
+
+  &.RoundButton_default {
+    height: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+    border-radius: 1rem
+  }
+
+  &.RoundButton_large {
+    height: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+    border-radius: 1.5rem
+  }
+
+  &.RoundButton_notBorder {
+    &.RoundButton_teal__XwelT {
+      background: var(--primary1);
+      color: var(--button-text);
+      &:hover {
+        background: var(--primary2)
+      }
     }
 
-    &:disabled {
+    &.RoundButton_lightGray {
+      background: var(--bg-element4);
+      color: var(--text1);
+      &:hover {
+        background: var(--bg-element3)
+      }
+    }
+
+    &.RoundButton_gray {
+      background: var(--gray6);
+      color: #fff;
+      &:hover {
+        background: var(--gray5)
+      }
+    }
+
+    &.RoundButton_darkGray {
+      background: var(--bg-element5);
+      color: var(--button-text);
+      &:hover {
+        background: var(--bg-element6)
+      }
+    }
+
+    &.RoundButton_trasnparent {
+      background: none;
+      color: var(--primary1);
+      &:hover {
+        background: var(--slight-layer)
+      }
+    }
+
+    &.RoundButton_red {
+      background: var(--destructive1);
+      color: var(--button-text);
+      &:hover {
+        background: var(--destructive2)
+      }
+    }
+  }
+
+  &.RoundButton_border {
+    background: var(--bg-element2);
+    &.RoundButton_teal__XwelT {
+      border: 1px solid var(--primary1);
+      color: var(--primary1);
+      &:hover {
         background: var(--bg-element2)
+      }
     }
 
-    &.RoundButton_small {
-        height: 1.5rem;
-        padding-left: .75rem;
-        padding-right: .75rem;
-        font-size: .875rem;
-        border-radius: .75rem
+    &.RoundButton_gray {
+      border: 1px solid var(--gray6);
+      color: var(--gray6);
+      &:hover {
+        background: var(--gray6)
+      }
     }
 
-    &.RoundButton_default {
-        height: 2rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        font-size: 1rem;
-        border-radius: 1rem
+    &.RoundButton_darkGray {
+      border: 1px solid var(--bg-element5);
+      color: var(--bg-element5);
+      &:hover {
+        background: var(--bg-element5)
+      }
     }
 
-    &.RoundButton_large {
-        height: 3rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        font-size: 1.5rem;
-        border-radius: 1.5rem
+    &.RoundButton_lightGray {
+      border: 1px solid var(--bg-element4);
+      color: var(--bg-element4);
+      &:hover {
+        background: var(--bg-element4)
+      }
     }
 
-    &.RoundButton_notBorder {
-        &.RoundButton_teal__XwelT {
-            background: var(--primary1);
-            color: var(--button-text);
-            &:hover {
-                background: var(--primary2)
-            }
-        }
-
-        &.RoundButton_lightGray {
-            background: var(--bg-element4);
-            color: var(--text1);
-            &:hover {
-                background: var(--bg-element3)
-            }
-        }
-
-        &.RoundButton_gray {
-            background: var(--gray6);
-            color: #fff;
-            &:hover {
-                background: var(--gray5)
-            }
-        }
-
-        &.RoundButton_darkGray {
-            background: var(--bg-element5);
-            color: var(--button-text);
-            &:hover {
-                background: var(--bg-element6)
-            }
-        }
-
-        &.RoundButton_trasnparent {
-            background: none;
-            color: var(--primary1);
-            &:hover {
-                background: var(--slight-layer)
-            }
-        }
-
-        &.RoundButton_red {
-            background: var(--destructive1);
-            color: var(--button-text);
-            &:hover {
-                background: var(--destructive2)
-            }
-        }
+    &:hover {
+      color: var(--button-text)
     }
-
-    &.RoundButton_border {
-        background: var(--bg-element2);
-        &.RoundButton_teal__XwelT {
-            border: 1px solid var(--primary1);
-            color: var(--primary1);
-            &:hover {
-                background: var(--bg-element2)
-            }
-        }
-
-        &.RoundButton_gray {
-            border: 1px solid var(--gray6);
-            color: var(--gray6);
-            &:hover {
-                background: var(--gray6)
-            }
-        }
-
-        &.RoundButton_darkGray {
-            border: 1px solid var(--bg-element5);
-            color: var(--bg-element5);
-            &:hover {
-                background: var(--bg-element5)
-            }
-        }
-
-        &.RoundButton_lightGray {
-            border: 1px solid var(--bg-element4);
-            color: var(--bg-element4);
-            &:hover {
-                background: var(--bg-element4)
-            }
-        }
-
-        &:hover {
-            color: var(--button-text)
-        }
-    }
+  }
 }
 
 /*End of Velog CSS*/
@@ -328,10 +328,10 @@ a {
   margin-left: auto;
   margin-right: auto;
   @media screen and (max-width: 1919px) {
-    width: 1376px;
+  width: 1376px;
   }
   @media screen and (max-width: 1440px) {
-    width: 1024px;
+  width: 1024px;
   }
 }
 
@@ -357,8 +357,8 @@ a {
 .Header_logo {
   line-height: 10px;
   & svg {
-    color: var(--text1);
-    height: 24px;
+  color: var(--text1);
+  height: 24px;
   }
 }
 
@@ -383,12 +383,12 @@ a {
   border-radius: 50%;
   cursor: pointer;
   &:hover {
-    background: var(--slight-layer)
+  background: var(--slight-layer)
   }
   & svg {
-    flex-shrink: 0;
-    width: 24px;
-    height: 24px;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
   }
 }
 
@@ -418,25 +418,25 @@ a {
   display: flex;
   align-items: center;
   & a+a {
-    margin-left: 20px;
+  margin-left: 20px;
   }
   & > a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    text-decoration: none;
-    white-space: nowrap;
-    color: var(--text3);
-    
-    &.HomeTab_active {
-      color: var(--text1);
-      font-weight: 700;
-    }
-    & svg {
-      font-size: 24px;
-      margin-right: 8px;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-decoration: none;
+  white-space: nowrap;
+  color: var(--text3);
+  
+  &.HomeTab_active {
+    color: var(--text1);
+    font-weight: 700;
+  }
+  & svg {
+    font-size: 24px;
+    margin-right: 8px;
+  }
   }
 }
 
@@ -448,13 +448,13 @@ a {
   bottom: -10px;
   transition: all .25s ease-out;
   &.HomeTab_first {
-    left: 2%;
+  left: 2%;
   }
   &.HomeTab_second {
-    left: 38.33%;
+  left: 38.33%;
   }
   &.HomeTab_third {
-    left: 70.33%;
+  left: 70.33%;
   }
 }
 
@@ -481,16 +481,16 @@ a {
   box-shadow: 0 0 4px rgba(0, 0, 0, .05);
   user-select: none;
   & svg {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
   }
 }
 
 .HomeTab_extra {
-    margin-top: 5px;
-    cursor: pointer;
-    font-size: 24px;
-    color: var(--text3);
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--text3);
 }
 
 .HomeLayout_main {
@@ -498,12 +498,12 @@ a {
   margin-top: 32px;
   margin-bottom: 16px;
   & main {
-    width: 100%;
+  width: 100%;
   }
 }
 
 .PostCardGrid {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 /* Velog CSS*/
@@ -517,179 +517,181 @@ a {
   --width: 20%;
   grid-template-columns: repeat(var(--card-count),calc(var(--width) - (32px * var(--spacer) / var(--card-count))));
   @media screen and (max-width: 1919px) {
-    --card-count:4;
-    --width: 25%
+  --card-count:4;
+  --width: 25%
   }
 
   @media screen and (max-width: 1440px) {
-    --card-count:3;
-    --width: 33.33%
+  --card-count:3;
+  --width: 33.33%
   }
 
   @media screen and (max-width: 1056px) {
-    --card-count:2;
-    --width: 50%
+  --card-count:2;
+  --width: 50%
   }
 
   @media screen and (max-width: 768px) {
-    grid-template-columns:repeat(1,100%);
-    grid-gap:16px
+  grid-template-columns:repeat(1,100%);
+  grid-gap:16px
   }
 }
 
 .PostCard {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 100%;
-    background: var(--bg-element1);
-    border-radius: 4px;
-    box-shadow: 0 4px 16px 0 rgba(0,0,0,.04);
-    transition: box-shadow .25s ease-in,transform .25s ease-in;
-    &:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 12px 20px 0 rgba(0,0,0,.08);
-        @media screen and (max-width: 1024px) {
-            transform:none
-        }
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  background: var(--bg-element1);
+  border-radius: 4px;
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,.04);
+  transition: box-shadow .25s ease-in,transform .25s ease-in;
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px 0 rgba(0,0,0,.08);
+    @media screen and (max-width: 1024px) {
+      transform:none
     }
+  }
 
-    .PostCard_styleLink {
-        display: block;
-        color: inherit;
-        text-decoration: none
-    }
+  .PostCard_styleLink {
+    display: block;
+    color: inherit;
+    text-decoration: none
+  }
 }
 
 .PostCard_content {
-    padding: 1rem;
-    display: flex;
-    flex: 1 1;
-    flex-direction: column;
-    .PostCard_h4 {
-        font-size: 1rem;
-        margin: 0 0 .25rem;
-        line-height: 1.5;
-        word-break: break-word;
-        color: var(--text1);
-        @media screen and (max-width: 767px) {
-            white-space:normal
-        }
+  padding: 1rem;
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  .PostCard_h4 {
+    font-size: 1rem;
+    margin: 0 0 .25rem;
+    line-height: 1.5;
+    word-break: break-word;
+    color: var(--text1);
+    @media screen and (max-width: 767px) {
+      white-space:normal
+    }
+  }
+
+  .PostCard_descriptionWrapper {
+    flex: 1 1
+  }
+
+  & p {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-size: .875rem;
+    line-height: 1.5;
+    &.PostCard_clamp {
+      height: 3.9375rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis
     }
 
-    .PostCard_descriptionWrapper {
-        flex: 1 1
-    }
+    color: var(--text2);
+    margin: 0 0 1.5rem
+  }
 
-    & p {
-        word-break: break-word;
-        overflow-wrap: break-word;
-        font-size: .875rem;
-        line-height: 1.5;
-        &.PostCard_clamp {
-            height: 3.9375rem;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis
-        }
-
-        color: var(--text2);
-        margin: 0 0 1.5rem
+  .PostCard_subInfo {
+    margin-top: auto;
+    font-size: .75rem;
+    line-height: 1.5;
+    color: var(--text3);
+    .PostCard_separator {
+      margin-left: .25rem;
+      margin-right: .25rem
     }
-
-    .PostCard_subInfo {
-        margin-top: auto;
-        font-size: .75rem;
-        line-height: 1.5;
-        color: var(--text3);
-        .PostCard_separator {
-            margin-left: .25rem;
-            margin-right: .25rem
-        }
-    }
+  }
 }
 
 .PostCard_footer {
-    padding: .625rem 1rem;
-    border-top: 1px solid var(--border4);
+  padding: .625rem 1rem;
+  border-top: 1px solid var(--border4);
+  display: flex;
+  font-size: .75rem;
+  line-height: 1.5;
+  justify-content: space-between;
+  .PostCard_userInfo {
+    text-decoration: none;
+    color: inherit;
     display: flex;
-    font-size: .75rem;
-    line-height: 1.5;
-    justify-content: space-between;
-    .PostCard_userInfo__Cu1X5 {
-        text-decoration: none;
-        color: inherit;
-        display: flex;
-        align-items: center;
-        & img {
-            object-fit: cover;
-            border-radius: 50%;
-            width: 1.5rem;
-            height: 1.5rem;
-            display: block;
-            margin-right: .5rem
-        }
-
-        & span {
-            color: var(--text3);
-            & b {
-                color: var(--text1)
-            }
-        }
+    align-items: center;
+    & img {
+      object-fit: cover;
+      border-radius: 50%;
+      width: 1.5rem;
+      height: 1.5rem;
+      display: block;
+      margin-right: .5rem
     }
 
-    .PostCard_likes {
-        display: flex;
-        align-items: center;
-        color: var(--text1);
-        & svg {
-            width: .75rem;
-            height: .75rem;
-            margin-right: .5rem
-        }
+    & span {
+      color: var(--text3);
+      & b {
+        color: var(--text1)
+      }
     }
+  }
+
+  .PostCard_likes {
+    display: flex;
+    align-items: center;
+    color: var(--text1);
+    & svg {
+      width: .75rem;
+      height: .75rem;
+      margin-right: .5rem
+    }
+  }
 }
 
 .PostCard_skeletonBlock {
-    .PostCard_skeletonThumbnailWrapper {
-        width: 100%;
-        padding-top: 52.19%;
-        position: relative;
-        .PostCard_skeletonThumbnail {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%
-        }
+  .PostCard_skeletonThumbnailWrapper {
+    width: 100%;
+    padding-top: 52.19%;
+    position: relative;
+    .PostCard_skeletonThumbnail {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%
+    }
+  }
+
+  .PostCard_lines {
+    height: 3.9375rem;
+    font-size: .875rem;
+    margin-bottom: 1.5rem;
+    .PostCard_line {
+      display: flex
     }
 
-    .PostCard_lines {
-        height: 3.9375rem;
-        font-size: .875rem;
-        margin-bottom: 1.5rem;
-        .PostCard_line {
-            display: flex
-        }
-
-        .PostCard_line+.PostCard_line {
-            margin-top: .3rem
-        }
+    .PostCard_line+.PostCard_line {
+      margin-top: .3rem
     }
+  }
 }
 
 .RatioImage {
+  padding-top: 52.1921%;
+  width: 100%;
+  position: relative;
+  & img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    position: relative;
-    & img {
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: block;
-        object-fit: cover
-    }
+    height: 100%;
+    display: block;
+    object-fit: cover
+  }
 }
 
 .PostCard_postimage {
@@ -700,10 +702,10 @@ a {
 }
 
 .utils_ellipsis {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow-x: hidden;
-    overflow-y: hidden
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden
 }
 
 /*End of Velog CSS*/
