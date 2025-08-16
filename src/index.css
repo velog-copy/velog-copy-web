@@ -1,4 +1,6 @@
 /*Velog CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400&display=swap');
+
 :root {
   --element-height-md: 40px;
   --element-height-sm: 36px;
