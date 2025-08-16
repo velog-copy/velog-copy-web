@@ -11,12 +11,12 @@ function PostCard({ post }) {
   const date=post.date;
   const comment=post.comment;
   const like=post.like;
-  const imageurl=post.imageUrl;
+  const imageid=post.imageid;
   return (
     <li className="PostCard">
       <Link to={`/@${userid}/${postid}`} className="VLink_block PostCard_styleLink">
         <div className="RatioImage">
-          <img className="PostCard_postimage" alt={title} src={`https://port-0-velog-copy-server-me9tpg0m0c115b1c.sel5.cloudtype.app${imageurl}`} />
+          <img className="PostCard_postimage" alt={title} src={`https://port-0-velog-copy-server-me9tpg0m0c115b1c.sel5.cloudtype.app/resources/image/${imageid}`} />
         </div>
       </Link>
       <div className="PostCard_content">
