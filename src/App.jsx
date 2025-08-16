@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ReactComponent as Logo } from './logo.svg';
-import { ReactComponent as Notification } from './notification.svg';
-import { ReactComponent as Search } from './search.svg';
-import { ReactComponent as Tranding } from './tranding.svg';
-import { ReactComponent as Recent } from './recent.svg';
-import { ReactComponent as Feed } from './feed.svg';
-import { ReactComponent as Downarrow } from './downarror.svg';
-import { ReactComponent as Kebab } from './kebab.svg';
-import { ReactComponent as Like } from './like.svg';
+import { ReactComponent as Logo } from './assets/logo.svg';
+import { ReactComponent as Notification } from './assets/notification.svg';
+import { ReactComponent as Search } from './assets/search.svg';
+import { ReactComponent as Tranding } from './assets/tranding.svg';
+import { ReactComponent as Recent } from './assets/recent.svg';
+import { ReactComponent as Feed } from './assets/feed.svg';
+import { ReactComponent as Downarrow } from './assets/downarror.svg';
+import { ReactComponent as Kebab } from './assets/kebab.svg';
+import { ReactComponent as Like } from './assets/like.svg';
 import './App.css';
 
 function App() {
