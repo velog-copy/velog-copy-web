@@ -341,61 +341,6 @@ a {
   flex-flow: row wrap;
 }
 
-.Header {
-  width: 100%;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  margin: 0 auto;
-}
-
-.Header_inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.Header_logo {
-  line-height: 10px;
-  & svg {
-    color: var(--text1);
-    height: 24px;
-  }
-}
-
-.Header_right {
-  display: flex;
-  align-items: center;
-  position: relative;
-  height: 40px;
-}
-
-.Header_notification {
-  margin-right: 4px;
-}
-
-.Header_icon {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  &:hover {
-    background: var(--slight-layer)
-  }
-  & svg {
-    flex-shrink: 0;
-    width: 24px;
-    height: 24px;
-  }
-}
-
-.Header_button {
-  margin-left: 8px;
-}
-
 .HomeTab, .HomeTab_left {
   display: flex;
   align-items: center;
