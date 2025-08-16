@@ -82,16 +82,7 @@ function App() {
               <ul className='PostCardGrid Grid'>
                 {posts.map(post => (
                   <PostCard
-                    key={post.postid}
-                    userid={post.userid}
-                    username={post.username}
-                    postid={post.postid}
-                    title={post.title}
-                    preview={post.preview}
-                    date={post.date}
-                    comment={post.comment}
-                    like={post.like}
-                    imageurl={post.imageUrl}
+                    post={post}
                   />
                 ))}
               </ul>
@@ -125,7 +116,16 @@ function NavTab({ to, icon: Icon, label, active }) {
   );
 }
 
-function PostCard({ userid, username, postid, title, preview, date, comment, like, imageurl }) {
+function PostCard({ post }) {
+  const userid=post.userid;
+  const username=post.username;
+  const postid=post.postid;
+  const title=post.title;
+  const preview=post.preview;
+  const date=post.date;
+  const comment=post.comment;
+  const like=post.like;
+  const imageurl=post.imageUrl;
   return (
     <li className="PostCard">
       <Link to={`/@${userid}/${postid}`} className="VLink_block PostCard_styleLink">
