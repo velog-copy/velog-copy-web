@@ -1,11 +1,11 @@
 import PostCard from './PostCard';
-import './PostList.css';
+import styles from './PostList.module.css';
 
 function PostList({ posts }) {
   return (
-    <div className='HomeLayout_main'>
+    <div className={styles.HomeLayout_main}>
       <main>
-        <ul className='PostCardGrid Grid'>
+        <ul className={`${styles.PostCardGrid} ${styles.Grid}`}>
           {posts.map(post => (
             <PostCard
               key={post.postid}

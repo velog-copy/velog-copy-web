@@ -2,12 +2,13 @@ import { Link, useLocation, useParams } from "react-router-dom";
 import { ReactComponent as Logo } from '../assets/logo.svg';
 import { ReactComponent as Notification } from '../assets/notification.svg';
 import { ReactComponent as Search } from '../assets/search.svg';
-import './Header.css';
+import gstyles from '../index.module.css';
+import styles from './Header.module.css';
 
 function HeaderIcon({ to, icon: Icon, className }) {
   return (
     <Link className={className} to={to}>
-      <div className="Header_icon">
+      <div className={styles.Header_icon}>
         <Icon />
       </div>
     </Link>
@@ -19,25 +20,25 @@ function Header(){
   const isHome = location.pathname === "/";
   const {userid, postid} = useParams();
   return (
-      <header className="Header">
-        <div className='Header_inner'>
-          <div className='Header_logo'>
+      <header className={styles.Header}>
+        <div className={styles.Header_inner}>
+          <div className={styles.Header_logo}>
             <Link to={`/${userid}/posts`}>
-              {isHome ? <Logo/> : <span className="Header_text">{userid.slice(1)}</span>}
+              {isHome ? <Logo/> : <span className={styles.Header_text}>{userid.slice(1)}</span>}
             </Link>
           </div>
-          <div className='Header_right'>
+          <div className={styles.Header_right}>
             <HeaderIcon
               to="/notification"
               icon={Notification}
-              className="Header_notification"
+              className={styles.Header_notification}
             />
             <HeaderIcon
               to="/search"
               icon={Search}
-              className="Header_search"
+              className={styles.Header_search}
             />
-            <button className='RoundButton RoundButton_default RoundButton_notBorder RoundButton_darkGray Header_button'>로그인</button>
+            <button className={`${gstyles.RoundButton} ${gstyles.RoundButton_default} ${gstyles.RoundButton_notBorder} ${gstyles.RoundButton_darkGray} ${styles.Header_button}`}>로그인</button>
           </div>
         </div>
       </header>

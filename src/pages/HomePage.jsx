@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import HomeTab from '../components/HomeTab';
 import PostList from '../components/PostList';
+import './HomePage.css';
 
 function HomePage() {
   const [posts, setPosts] = useState([]);
