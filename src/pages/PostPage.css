@@ -1,0 +1,173 @@
+.Pagehead {
+    margin-top: 5.5rem;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    & h1 {
+        font-size: 3rem;
+        line-height: 1.5;
+        letter-spacing: -0.004em;
+        margin-top: 0px;
+        font-weight: 800;
+        color: var(--text1);
+        margin-bottom: 2rem;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+        transition: color 0.125s ease-in;
+    }
+}
+
+.HeadInfo {
+    font-size: 1rem;
+    color: var(--text2);
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    & .information {
+        & .username {
+            color: var(--text1);
+            font-weight: bold;
+            & a {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+        & .separator {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+.Buttons {
+    display: flex;
+}
+
+.Follow {
+    width: 96px;
+    height: 32px;
+    font-size: 16px;
+}
+
+.button {
+    display: flex;
+    box-shadow: none;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: var(--bg-element1);
+    cursor: pointer;
+    border-radius: 16px;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    outline: none;
+    font-size: 16px;
+}
+
+.FollowButton {
+    color: var(--primary1);
+    border: 1px solid var(--primary1);
+}
+
+.Tags {
+    margin-top: 0.875rem;
+    margin-bottom: -0.875rem;
+    min-height: 0.875rem;
+}
+
+.Tag {
+    margin-bottom: 0.875rem;
+    background: var(--bg-tag);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 2rem;
+    border-radius: 1rem;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-right: 0.875rem;
+    color: var(--primary1);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.Tag:hover {
+    background: var(--prism-bg);
+    color: var(--primary2);
+}
+
+.Sidebar {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.Side {
+    position: absolute;
+    left: -7rem;
+}
+
+.SideIn {
+    width: 4rem;
+    background: var(--bg-element2);
+    border: 1px solid var(--border4);
+    border-radius: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.SideBtn {
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: var(--bg-element1);
+    border: 1px solid var(--border3);
+    border-radius: 1.5rem;
+    color: var(--text3);
+    cursor: pointer;
+    z-index: 5;
+    & svg {
+        width: 24px;
+        height: 24px;
+    }
+    & .share {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.Likenum {
+    margin-top: 0.5rem;
+    color: var(--text2);
+    line-height: 1;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.PageContents {
+    width: 768px;
+    margin: 5rem auto 0px;
+}
+
+.PageContent {
+    font-size: 1.125rem;
+    color: var(--text1);
+    transition: color 0.125s ease-in;
+    line-height: 1.7;
+    letter-spacing: -0.004em;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
