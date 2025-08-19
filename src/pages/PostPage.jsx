@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Header from '../components/Header';
+import ReactMarkdown from "react-markdown";
 import { ReactComponent as Like } from '../assets/like.svg';
 import { ReactComponent as Share } from '../assets/share.svg';
+import './PostPage.css';
 
 function PostPage() {
   const [posts, setPosts] = useState([]);
@@ -32,7 +34,7 @@ function PostPage() {
       <div className='HomeLayout'>
         <Header />
         <Pagehead />
-        {/*<PageContents />*/}
+        <PageContents />
       </div>
     </div>
   );
@@ -40,36 +42,50 @@ function PostPage() {
 
 function Pagehead() {
   return (
-    <div className='head-wrapper'>
-      <h1>title</h1>
-      <div className='HeadInfo'>
-        <div className='information'>
-          <span className='username'><a href="" className='HeadUsername'></a></span>
-        </div>
-        <span className='separator'>·</span>
-        <span></span>
-      </div>
-      <div className='Buttons'>
-        <div className='Follow'>
-          <button className='FollowButton'>
-            <span>팔로우</span>
-          </button>
-        </div>
-      </div>
-      <div className='Tags'>
-        <a className='Tag' href=''>Test</a>
-      </div>
-      <div className='Sidebar'>
-        <div className='Side'>
-          <div className='SideIn'>
-            <div className='Likebtn'>
-              <Like></Like>
-            </div>
-            <div className='Likenum'></div>
-            <div className='Sharebtn'>
-              <Share></Share>
+    <div className='Pagehead'>
+      <div className='head-wrapper'>
+        <h1>title</h1>
+        <div className='HeadInfo'>
+          <div className='information'>
+            <span className='username'><a href="" className='HeadUsername'>ASDF</a></span>
+            <span className='separator'>·</span>
+            <span>2025년 8월 10일</span>
+          </div>
+          <div className='Buttons'>
+            <div className='Follow'>
+              <button className='FollowButton button'>
+                <span>팔로우</span>
+              </button>
             </div>
           </div>
+        </div>
+        <div className='Tags'>
+          <a className='Tag' href=''>Test</a>
+        </div>
+        <div className='Sidebar'>
+          <div className='Side'>
+            <div className='SideIn'>
+              <div className='SideBtn'>
+                <Like className='like'></Like>
+              </div>
+              <div className='Likenum'>0</div>
+              <div className='SideBtn'>
+                <Share className='share'></Share>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function PageContents() {
+  return (
+    <div className='PageContents'>
+      <div className='PageContent'>
+        <div>
+          <ReactMarkdown>Place</ReactMarkdown>
         </div>
       </div>
     </div>
