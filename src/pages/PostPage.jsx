@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Header from '../components/Header';
+import { ReactComponent as Like } from '../assets/like.svg';
+import { ReactComponent as Share } from '../assets/share.svg';
 
 function PostPage() {
   const [posts, setPosts] = useState([]);
@@ -29,6 +31,46 @@ function PostPage() {
     <div className='Content'>
       <div className='HomeLayout'>
         <Header />
+        <Pagehead />
+        {/*<PageContents />*/}
+      </div>
+    </div>
+  );
+}
+
+function Pagehead() {
+  return (
+    <div className='head-wrapper'>
+      <h1>title</h1>
+      <div className='HeadInfo'>
+        <div className='information'>
+          <span className='username'><a href="" className='HeadUsername'></a></span>
+        </div>
+        <span className='separator'>·</span>
+        <span></span>
+      </div>
+      <div className='Buttons'>
+        <div className='Follow'>
+          <button className='FollowButton'>
+            <span>팔로우</span>
+          </button>
+        </div>
+      </div>
+      <div className='Tags'>
+        <a className='Tag' href=''>Test</a>
+      </div>
+      <div className='Sidebar'>
+        <div className='Side'>
+          <div className='SideIn'>
+            <div className='Likebtn'>
+              <Like></Like>
+            </div>
+            <div className='Likenum'></div>
+            <div className='Sharebtn'>
+              <Share></Share>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
