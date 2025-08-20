@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactMarkdown from "react-markdown";
 import { ReactComponent as Leftarrow } from '../assets/leftarrow.svg';
-import CodeToolbar from '../components/CodeToolbar';
+import CodeToolbar from '../components/codeToolbar';
 
 import CodeMirror from '@uiw/react-codemirror';
 import { markdown, markdownLanguage } from '@codemirror/lang-markdown';

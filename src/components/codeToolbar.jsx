@@ -7,6 +7,7 @@ import { ReactComponent as Blockquote } from '../assets/blockquote.svg';
 import { ReactComponent as Link } from '../assets/link.svg';
 import { ReactComponent as Image } from '../assets/image.svg';
 import { ReactComponent as Codeblock } from '../assets/codeblock.svg';
+import styles from './codeToolbar.module.css';
 
 const tools = [
   { type: 'header', value: 1 },
@@ -23,11 +24,11 @@ const tools = [
   { type: 'icon', Icon: Image },
   { type: 'icon', Icon: Codeblock }
 ];
-const Separator = () => <div className='separator'></div>;
+const Separator = () => <div className={styles.separator}></div>;
 
 function CodeToolbar() {
   return (
-    <div className='CodeToolbar'>
+    <div className={styles.CodeToolbar}>
       {tools.map((tool, index) => {
         if (tool.type === 'separator') {
           return <Separator key={index} />;
@@ -35,7 +36,7 @@ function CodeToolbar() {
         if (tool.type === 'header') {
           return (
             <ToolbarButton key={tool.value} value={tool.value}>
-              <div className='Toolheader'>H<span>{tool.value}</span></div>
+              <div className={styles.Toolheader}>H<span>{tool.value}</span></div>
             </ToolbarButton>
           );
         }

@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './ToolbarButton.module.css';
 
 function ToolbarButton({ children, value, onClick }) {
   return (
-    <button className='Tool' value={value} onClick={onClick}>
+    <button className={styles.Tool} value={value} onClick={onClick}>
       {children}
     </button>
   );

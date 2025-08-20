@@ -1,0 +1,31 @@
+.CodeToolbar {
+    top: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background: var(--bg-page2);
+    z-index: 10;
+    transition: 0.125s ease-in;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: auto;
+}
+
+.Toolheader {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: serif;
+    & span {
+        font-size: 0.75rem;
+    }
+}
+
+.separator {
+    width: 1px;
+    height: 1.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    background: var(--border3);
+}
