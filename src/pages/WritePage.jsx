@@ -10,6 +10,7 @@ import styles from './WritePage.module.css';
 
 function WritePage() {
   const [title, setTitle] = useState([]);
+  const handleTitleChange = (e) => setTitle(e.target.value);
 
   return (
     <div className={styles.Writemain}>
@@ -19,7 +20,7 @@ function WritePage() {
             <div className={styles.CodeWrapper}>
               <div className={styles.CodeTop}>
                 <div className={styles.Topbox}>
-                  <textarea className={styles.TitleInput} placeholder='제목을 입력하세요'></textarea>
+                  <textarea className={styles.TitleInput} placeholder='제목을 입력하세요' value={title} onChange={handleTitleChange}></textarea>
                   <div className={styles.Line}></div>
                   <div>
                     <div className={styles.TagBox}>
@@ -48,7 +49,7 @@ function WritePage() {
         </div> 
         <div className={styles.WriteRight}>
           <div className={styles.WritePreview}>
-            <h1 className={styles.WriteTitle}></h1>
+            <h1 className={styles.WriteTitle}>{title}</h1>
             <div className={styles.WriteContents}>
             </div>
           </div>
