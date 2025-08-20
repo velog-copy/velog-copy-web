@@ -17,7 +17,16 @@ function WritePage() {
           <div className='CodeBox'>
             <div className='CodeWrapper'>
               <div className='CodeTop'>
-
+                <div className='Topbox'>
+                  <textarea className='TitleInput' placeholder='제목을 입력하세요'></textarea>
+                  <div className='Line'></div>
+                  <div>
+                    <div className='TagBox'>
+                      <div className='Tag'>Placeholder</div>
+                      <input className="TagInput" placeholder='태그를 입력하세요'></input>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className='CodeToolbar'>
 
