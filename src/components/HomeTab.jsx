@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { ReactComponent as Tranding } from '../assets/tranding.svg';
 import { ReactComponent as Recent } from '../assets/recent.svg';
 import { ReactComponent as Feed } from '../assets/feed.svg';
-import { ReactComponent as Downarrow } from '../assets/downarror.svg';
+import { ReactComponent as Downarrow } from '../assets/downarrow.svg';
 import { ReactComponent as Kebab } from '../assets/kebab.svg';
 import styles from './HomeTab.module.css';
 
