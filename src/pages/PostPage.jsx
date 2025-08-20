@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import ReactMarkdown from "react-markdown";
 import { ReactComponent as Like } from '../assets/like.svg';
 import { ReactComponent as Share } from '../assets/share.svg';
-import './PostPage.css';
+import styles from './PostPage.module.css';
 
 function PostPage() {
   const [posts, setPosts] = useState([]);
@@ -42,35 +42,35 @@ function PostPage() {
 
 function Pagehead() {
   return (
-    <div className='Pagehead'>
-      <div className='head-wrapper'>
+    <div className={styles.Pagehead}>
+      <div className={styles.headwrapper}>
         <h1>title</h1>
-        <div className='HeadInfo'>
-          <div className='information'>
-            <span className='username'><a href="" className='HeadUsername'>ASDF</a></span>
-            <span className='separator'>·</span>
+        <div className={styles.HeadInfo}>
+          <div className={styles.information}>
+            <span className={styles.username}><a href="" className='HeadUsername'>ASDF</a></span>
+            <span className={styles.separator}>·</span>
             <span>2025년 8월 10일</span>
           </div>
-          <div className='Buttons'>
-            <div className='Follow'>
-              <button className='FollowButton button'>
+          <div className={styles.Buttons}>
+            <div className={styles.Follow}>
+              <button className={`${styles.FollowButton} ${styles.button}`}>
                 <span>팔로우</span>
               </button>
             </div>
           </div>
         </div>
-        <div className='Tags'>
-          <a className='Tag' href=''>Test</a>
+        <div className={styles.Tags}>
+          <a className={styles.Tag} href=''>Test</a>
         </div>
-        <div className='Sidebar'>
-          <div className='Side'>
-            <div className='SideIn'>
-              <div className='SideBtn'>
-                <Like className='like'></Like>
+        <div className={styles.Sidebar}>
+          <div className={styles.Side}>
+            <div className={styles.SideIn}>
+              <div className={styles.SideBtn}>
+                <Like className={styles.like}></Like>
               </div>
-              <div className='Likenum'>0</div>
-              <div className='SideBtn'>
-                <Share className='share'></Share>
+              <div className={styles.Likenum}>0</div>
+              <div className={styles.SideBtn}>
+                <Share className={styles.share}></Share>
               </div>
             </div>
           </div>
@@ -82,8 +82,8 @@ function Pagehead() {
 
 function PageContents() {
   return (
-    <div className='PageContents'>
-      <div className='PageContent'>
+    <div className={styles.PageContents}>
+      <div className={styles.PageContent}>
         <div>
           <ReactMarkdown>Place</ReactMarkdown>
         </div>
