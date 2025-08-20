@@ -2,13 +2,8 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactMarkdown from "react-markdown";
 import { ReactComponent as Leftarrow } from '../assets/leftarrow.svg';
-import { ReactComponent as Bold } from '../assets/bold.svg';
-import { ReactComponent as Italic } from '../assets/italic.svg';
-import { ReactComponent as Strike } from '../assets/strike.svg';
-import { ReactComponent as Blockquote } from '../assets/blockquote.svg';
-import { ReactComponent as Link } from '../assets/link.svg';
-import { ReactComponent as Image } from '../assets/image.svg';
-import { ReactComponent as Codeblock } from '../assets/codeblock.svg';
+import CodeToolbar from '../components/CodeToolbar';
+
 import CodeMirror from '@uiw/react-codemirror';
 import { markdown, markdownLanguage } from '@codemirror/lang-markdown';
 //import styles from './WritePage.module.css';
@@ -35,43 +30,7 @@ function WritePage() {
                   </div>
                 </div>
               </div>
-              <div className='CodeToolbar'>
-                <button className='Tool' value='1'>
-                  <div className='Toolheader'>H<span>1</span></div>
-                </button>
-                <button className='Tool' value='2'>
-                  <div className='Toolheader'>H<span>2</span></div>
-                </button>
-                <button className='Tool' value='3'>
-                  <div className='Toolheader'>H<span>3</span></div>
-                </button>
-                <button className='Tool' value='4'>
-                  <div className='Toolheader'>H<span>4</span></div>
-                </button>
-                <div className='separator'></div>
-                <button className='Tool'>
-                  <Bold></Bold>
-                </button>
-                <button className='Tool'>
-                  <Italic></Italic>
-                </button>
-                <button className='Tool'>
-                  <Strike></Strike>
-                </button>
-                <div className='separator'></div>
-                <button className='Tool'>
-                  <Blockquote></Blockquote>
-                </button>
-                <button className='Tool'>
-                  <Link></Link>
-                </button>
-                <button className='Tool'>
-                  <Image></Image>
-                </button>
-                <button className='Tool'>
-                  <Codeblock></Codeblock>
-                </button>
-              </div>
+              <CodeToolbar></CodeToolbar>
               <CodeMirror className="CodeMirror" placeholder="당신의 이야기를 적어보세요..." extensions={[markdown({ base: markdownLanguage })]} basicSetup={{lineNumbers: false, highlightActiveLineGutter: false, highlightActiveLine: false}} />
             </div>
             <div className='Toolbar'>
