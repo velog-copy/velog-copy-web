@@ -1,0 +1,183 @@
+.Writemain {
+    width: 100%;
+    height: 100%;
+}
+
+.WriteLayout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.WriteLeft {
+    background-color: var(--bg-page2);
+    min-width: 0px;
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.016) 0px 0px 8px;
+}
+
+.WriteRight {
+    background-color: var(--bg-element8);
+    min-width: 0px;
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.WritePreview {
+    word-break: break-word;
+    padding: 3rem;
+    flex: 1 1 0%;
+    overflow-y: auto;
+    color: var(--text1);
+    & .WriteTitle {
+        font-size: 2.5em;
+        margin-bottom: 4rem;
+        font-weight: 800;
+    }
+    & .WriteContents {
+        font-size: 1.125rem;
+        color: var(--text1);
+        transition: color 0.125s ease-in;
+        line-height: 1.7;
+        letter-spacing: -0.004em;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+    }
+}
+
+.CodeBox {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    & .CodeWrapper {
+        min-height: 0px;
+        padding-bottom: 4rem;
+        flex: 1 1 0%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.CodeTop {
+    max-height: 556px;
+    opacity: 1;
+}
+
+.CodeToolbar {
+    top: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background: var(--bg-page2);
+    z-index: 10;
+    transition: 0.125s ease-in;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: auto;
+}
+
+.CodeMirror {
+    flex: 1 1 0%;
+    min-height: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Toolbar {
+    position: fixed;
+    bottom: 0px;
+    z-index: 10;
+    width: 594px;
+}
+
+.ToolBox {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 4rem;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    background: var(--editor-footer);
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.ExitButton {
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+    -webkit-box-align: center;
+    align-items: center;
+    background: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    outline: none;
+    color: var(--text1);
+    & svg {
+        font-size: 1.25rem;
+        margin-right: 0.5rem;
+    }
+    & span {
+        font-size: 1.125rem;
+    }
+}
+
+.ExitButton:hover {
+    background-color: var(--bg-element3);
+}
+
+.SaveButtons {
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.Button {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+    color: var(--primary1);
+    border-radius: 4px;
+    padding: 0px 1.25rem;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+.Button:hover {
+    background-color: var(--bg-element3);
+}
+
+.SaveButton {
+    height: 2.5rem;
+    font-size: 1.125rem;
+}
+
+.Save {
+    margin-left: 0.75rem;
+    background: var(--primary1);
+    color: var(--button-text);
+}
+
+.Save:hover {
+    background: var(--primary2);
+}
