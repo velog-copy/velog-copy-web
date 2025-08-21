@@ -6,6 +6,7 @@ import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import "katex/dist/katex.min.css";
+import rehypePrism from "rehype-prism-plus";
 
 import { ReactComponent as Leftarrow } from '../assets/leftarrow.svg';
 import CodeToolbar from '../components/codeToolbar';
@@ -61,7 +62,7 @@ function WritePage() {
           <div className={styles.WritePreview}>
             <h1 className={styles.WriteTitle}>{title}</h1>
             <div className={styles.WriteContents}>
-              <ReactMarkdown components={{p({ children }) { return <p className={styles.linebreak}>{children}</p>; }}} remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeRaw, rehypeKatex]}>{content}</ReactMarkdown>
+              <ReactMarkdown components={{p({ children }) { return <p className={styles.linebreak}>{children}</p>; }}} remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeRaw, rehypeKatex, [rehypePrism, { ignoreMissing: true }]]}>{content}</ReactMarkdown>
             </div>
           </div>
         </div>
