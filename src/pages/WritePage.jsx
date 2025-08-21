@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
@@ -59,8 +60,8 @@ function WritePage() {
         <div className={styles.WriteRight}>
           <div className={styles.WritePreview}>
             <h1 className={styles.WriteTitle}>{title}</h1>
-            <div className={`${styles.WriteContents} ${styles.linebreak}`}>
-              <ReactMarkdown remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeKatex]}>{content}</ReactMarkdown>
+            <div className={styles.WriteContents}>
+              <ReactMarkdown components={{p({ children }) { return <p className={styles.linebreak}>{children}</p>; }}} remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeRaw, rehypeKatex]}>{content}</ReactMarkdown>
             </div>
           </div>
         </div>
