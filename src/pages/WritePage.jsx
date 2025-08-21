@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { ReactComponent as Leftarrow } from '../assets/leftarrow.svg';
 import CodeToolbar from '../components/codeToolbar';
 
@@ -10,7 +11,11 @@ import styles from './WritePage.module.css';
 
 function WritePage() {
   const [title, setTitle] = useState([]);
+  const [content, setContent] = useState("");
   const handleTitleChange = (e) => setTitle(e.target.value);
+  const handleContentChange = useCallback((val, viewUpdate) => {
+    setContent(val);
+  }, []);
 
   return (
     <div className={styles.Writemain}>
@@ -31,7 +36,7 @@ function WritePage() {
                 </div>
               </div>
               <CodeToolbar></CodeToolbar>
-              <CodeMirror className={styles.CodeMirror} placeholder="당신의 이야기를 적어보세요..." extensions={[markdown({ base: markdownLanguage })]} basicSetup={{lineNumbers: false, highlightActiveLineGutter: false, highlightActiveLine: false}} />
+              <CodeMirror className={styles.CodeMirror} placeholder="당신의 이야기를 적어보세요..." value={content} extensions={[markdown({ base: markdownLanguage })]} basicSetup={{lineNumbers: false, highlightActiveLineGutter: false, highlightActiveLine: false}} onChange={handleContentChange} />
             </div>
             <div className={styles.Toolbar}>
               <div className={styles.ToolBox}>
@@ -51,6 +56,7 @@ function WritePage() {
           <div className={styles.WritePreview}>
             <h1 className={styles.WriteTitle}>{title}</h1>
             <div className={styles.WriteContents}>
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
             </div>
           </div>
         </div>
