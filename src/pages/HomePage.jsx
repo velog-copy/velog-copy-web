@@ -28,11 +28,13 @@ function HomePage() {
   }, []);
 
   return (
-    <div className='Content'>
-      <div className='HomeLayout'>
-        <Header />
-        <HomeTab />
-        <PostList posts={posts} />
+    <div className='ColorBG'>
+      <div className='Content'>
+        <div className='HomeLayout'>
+          <Header />
+          <HomeTab />
+          <PostList posts={posts} />
+        </div>
       </div>
     </div>
   );

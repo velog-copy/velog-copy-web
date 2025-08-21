@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App" data-theme="light">
+    <div className="App">
       <Routes>
         <Route path="/" element={<HomePage/>} />
         <Route path="/:userid/:postid" element={<PostPage/>} />

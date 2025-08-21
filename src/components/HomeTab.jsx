@@ -4,6 +4,7 @@ import { ReactComponent as Recent } from '../assets/recent.svg';
 import { ReactComponent as Feed } from '../assets/feed.svg';
 import { ReactComponent as Downarrow } from '../assets/downarrow.svg';
 import { ReactComponent as Kebab } from '../assets/kebab.svg';
+import hstyles from './Header.module.css';
 import styles from './HomeTab.module.css';
 
 function NavTab({ to, icon: Icon, label, active }) {
@@ -20,7 +21,7 @@ function NavTab({ to, icon: Icon, label, active }) {
 
 function HomeTab() {
   return (
-    <div className={`${styles.HomeTab} ${styles.Header}`}>
+    <div className={`${styles.HomeTab} ${hstyles.Header}`}>
       <nav className={styles.HomeTab_left}>
         <div className={styles.HomeTab_tab}>
           <NavTab to="/tranding/week" icon={Tranding} label="트렌딩" active />

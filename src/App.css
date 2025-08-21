@@ -1,3 +1,13 @@
+.App {
+  width: 100%;
+  min-height: 100svh;
+  height: 100%;
+}
+
+body {
+  background: var(--bg-page2);
+}
+
 .Content {
   width: 1728px;
   height: fit-content;
@@ -9,6 +19,13 @@
   @media screen and (max-width: 1440px) {
     width: 1024px;
   }
+}
+
+.ColorBG {
+  background-color: var(--bg-page1);
+  width: 100%;
+  min-height: 100svh;
+  height: 100%;
 }
 
 .HomeLayout {
