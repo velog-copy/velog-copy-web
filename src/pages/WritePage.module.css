@@ -51,6 +51,10 @@
     }
 }
 
+.linebreak {
+  white-space: pre-wrap;
+}
+
 .CodeBox {
     height: 100%;
     display: flex;
