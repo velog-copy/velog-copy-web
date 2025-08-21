@@ -44,3 +44,12 @@ body {
 }
 
 /*End of Velog CSS*/
+
+.cm-content {
+  white-space: normal !important;
+  max-width: 100% !important;
+}
+
+.cm-line {
+  padding: 0 !important;
+}

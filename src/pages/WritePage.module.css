@@ -94,6 +94,7 @@
     color: var(--text1);
     font-family: "Fira Mono", monospace;
     overflow: scroll;
+    padding: 0 48px;
 }
 
 .Topbox {

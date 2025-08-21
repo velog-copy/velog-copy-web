@@ -41,7 +41,7 @@ function WritePage() {
                 </div>
               </div>
               <CodeToolbar></CodeToolbar>
-              <CodeMirror className={styles.CodeMirror} placeholder="당신의 이야기를 적어보세요..." value={content} extensions={[markdown({ base: markdownLanguage })]} basicSetup={{autocompletion: false, lineNumbers: false, bracketMatching: false, closeBrackets: false, highlightActiveLineGutter: false, highlightActiveLine: false, highlightSelectionMatches: false}} onChange={handleContentChange} />
+              <CodeMirror className={styles.CodeMirror} placeholder="당신의 이야기를 적어보세요..." value={content} extensions={[markdown({ base: markdownLanguage })]} basicSetup={{autocompletion: false, foldGutter: false, lineNumbers: false, bracketMatching: false, closeBrackets: false, highlightActiveLineGutter: false, highlightActiveLine: false, highlightSelectionMatches: false}} onChange={handleContentChange} />
             </div>
             <div className={styles.Toolbar}>
               <div className={styles.ToolBox}>
